@@ -184,7 +184,7 @@ img{
 .contacts-infos ul li{
     padding-top: 5px;
     list-style: none;
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-style: oblique;
     font-weight: bold;
 }
@@ -202,7 +202,7 @@ img{
     margin: 0px auto;
 }
 #mail_box .titre p{
-    font-size: 1.3em;
+    font-size: 1.8em;
     text-transform: uppercase;
     color: rgb(128, 50, 1);
     font-weight: bold;
@@ -215,7 +215,7 @@ input, textarea{
     color: rgb(128, 50, 1);
     outline: none;
     border: 1px solid rgb(128, 50, 1);
-    font-size: 1.1em;
+    font-size: 1.5em;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -225,7 +225,7 @@ textarea{
     margin-bottom: 0px;
 }
 label{
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-weight: bold;
     letter-spacing: 2px;
     color: #693c1f;
@@ -236,7 +236,7 @@ form button{
     margin: 10px auto;
     background: rgb(128, 50, 1); 
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.8em;
     font-weight: 900;
     border: none;
     letter-spacing: 1px;
@@ -262,7 +262,7 @@ footer{
 }
 footer p a{
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: wheat;
 }
 
