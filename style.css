@@ -1,0 +1,386 @@
+body{
+  font: Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+header{
+    width: 100%;
+    min-height: 100px;
+    border-bottom: 5px solid rgb(128, 50, 1);
+    top: 0%;
+    position: fixed;
+    background: #fff;
+    text-align: center;
+    color: rgb(128, 50, 1);
+}
+.menu-toggle{
+    display: none;
+}
+#main-contain #titre{
+    text-align: center;
+    letter-spacing: 5px;
+}
+#titre h2{
+    font-size: 1.8em;
+}
+.hyperText{
+    font-size: 1.9em;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px rgb(128, 50, 1), 0px 0px 3px rgb(128, 0, 1);
+    animation: changeColor 20s infinite;
+}
+.nav{
+    margin-top: -10px;
+    text-align: center;
+}
+#main-contain nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 90%;
+    font-size: 1.5em;
+}
+#main-contain nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(128, 50, 1);
+    font-weight: bold;
+}
+nav ul li a:hover, nav ul li a:active{
+    font-style: oblique;
+    background: #c7a37a;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Accueil */
+#accueil{
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+#accueil p{
+    margin-top: 100px;
+    color: #c7a37a; 
+    font-size: 7em;
+}
+
+/* A propos */
+#apropos{
+    background: #f8f3ec;
+    text-align: center;
+    margin-top: 100px;
+}
+#apropos div{
+    margin: auto;
+    padding: 50px;
+    font-size: 5em;
+    color: #8b5c35;
+    font-weight: bold;
+}
+
+/* Classes */
+.main_classes{
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.main_classes p{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: rgb(128, 50, 1);
+}
+#classes{
+    height: 600px;
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;    
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#classes .image_box{
+    margin: 20px 50px;
+    background: #f8f3ec;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(128, 50, 1);
+    box-shadow: 0px 0px 8px rgb(128, 50, 1);
+}
+#classes .image_box h2{
+    width: 500px;
+    letter-spacing: 1px;
+}
+#classes .image_box .image{
+    width: 90%;
+    height: 450px;
+    margin: 10px auto;
+    padding-top: 5px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Contacts */
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+}
+#contacts{
+    width: 50%;
+    background: white;
+    align-items: center;
+    display: block;
+    margin: auto 5px;
+}
+#contacts .titre{
+    width: 90%;
+    background: rgb(128, 50, 1);
+    color: white;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.7em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 1px solid rgb(128, 50, 1);
+    box-shadow: 1px 1px 5px #c7a37a, -1px 0px 5px #c7a37a; 
+    animation: change 20s infinite;
+}
+#contacts .titre p{
+    text-transform: uppercase;
+}
+#contacts .contacts-infos{
+    width: 90%;
+    background-color: white;
+    color: rgb(128, 50, 1);
+    margin: auto;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: 1px solid rgb(128, 50, 1);
+    border-top: none;
+    box-shadow: 1px 1px 5px #c7a37a, -1px 0px 5px #c7a37a; 
+}
+.contacts-infos ul li{
+    padding-top: 5px;
+    list-style: none;
+    font-size: 1.1em;
+    font-style: oblique;
+    font-weight: bold;
+}
+#mail_box{
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgb(128, 50, 1);
+    border-radius: 10px;
+}
+#mail_box .titre{
+    height: 10%;
+    text-align: center;
+    margin: 0px auto;
+}
+#mail_box .titre p{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: rgb(128, 50, 1);
+    font-weight: bold;
+}
+input, textarea{
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: rgb(128, 50, 1);
+    outline: none;
+    border: 1px solid rgb(128, 50, 1);
+    font-size: 1.1em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+textarea{
+    height: 70px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+label{
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #693c1f;
+    padding-bottom: 10px;
+}
+form button{
+    padding: 5px 10px;
+    margin: 10px auto;
+    background: rgb(128, 50, 1); 
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 900;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    animation: change 20s infinite;
+}
+.separation{
+    display: none;
+}
+
+/* Pied de page */
+footer{
+    height: 40px;
+    padding: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    background: rgb(128, 50, 1);
+    font-size: 14px;
+    overflow: hidden;
+    color: whitesmoke;
+    animation: change 20s infinite;
+}
+footer p a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: wheat;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 700px){
+    header{
+        border-bottom: 2px solid rgb(128, 50, 1);
+    }
+    #titre h2{
+        font-size: 1.2em;
+    }
+    .hyperText{
+        font-size: 1.5em;
+    }
+    #menu-toggle{
+        display: block;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: -20px;
+    }
+    .nav{
+        display: none;
+        background: #f8f3ec;
+        width: 50%;
+        position: absolute;
+        right: 0px;
+        color: #693c1f;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        box-shadow: -1px 0px 5px #693c1f;
+    }
+    #main-contain nav ul{
+        display: inline;
+        text-align: left;
+    }
+    nav ul li{
+        padding: 10px 8px;
+        letter-spacing: 2px;
+    }
+    nav ul li a{
+        color: #693c1f;
+    }
+    nav #menu-toggle1{
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        margin-bottom: 20px;
+    }
+    #accueil{
+        
+    }
+    #accueil p{
+        margin: auto;
+        margin-top: 50px;
+        font-size: 4em;
+    }
+    #apropos div{
+        font-size: 3em;
+    }
+    .main_classes{
+        margin-bottom: 0px;
+        margin-top: 100px;
+    }
+    .main_classes p{
+        font-size: 24px;
+    }
+    #classes .image_box{
+        width: 400px;
+        height: 350px;
+        margin: 10px 20px;
+    }
+    #classes .image_box h2{
+        width: 250px;
+    }
+    #classes .image_box .image{
+        height: 250px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #contacts{
+        min-height: 200px;
+        width: 90%;
+        margin: 20px auto;
+    }
+    #mail_box{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+/* Toutes les animations */
+@keyframes changeolor{
+    0%{
+        color: #c7a37a;
+    }
+    20%{
+        color: aqua;
+        letter-spacing: 10px;
+    }
+    100%{
+        color: rgb(128, 50, 1);
+    }
+}
+@keyframes chane{
+    20%{
+        background: aqua;
+        color: rgb(128, 50, 1);
+    }
+    100%{
+        background: rgb(128, 50, 1);
+        color: aqua;
+    }
+}

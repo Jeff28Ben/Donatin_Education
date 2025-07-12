@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="site web professionnel de Donatin">
+    <meta name="keywords" content="web design, site web professionnel">
+    <meta name="author" content="Jeffrey ANANI">
+    
+    <title>Donatin Page Web</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- Entête de la page -->
+    <header>
+        <div id="main-contain">
+            <!-- Titre de la page -->
+            <div id="titre">
+                <h2> CSP La Maison des Enfants<span class="hyperText"> "Donatin"</span></h2>
+            </div>
+            <!-- Bouton de menu -->
+            <div class="menu-toggle" id="menu-toggle" onclick="openNav()"> &#9776; </div>
+            <!-- Zone de navigation -->
+            <div class="nav" id="nav">
+                <nav>
+                    <div class="menu-toggle" id="menu-toggle1" onclick="closeNav()"> &#9776; </div>                  
+                    <ul>
+                        <li><a href="#accueil"> Accueil </a></li>
+                        <li><a href="#classes"> Nos Classes </a></li>
+                        <li><a href="#activites_extra"> Activités Extra </a></li>
+                        <li><a href="#resultats"> Les Résultats </a></li>                  
+                        <li><a href="#main"> Contacts </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Accueil de la page -->
+    <section id="accueil">
+        
+        <p>Une école d'excellence pour un avenir brillant à vos enfants !!!</p>
+        
+    </section>
+    
+    <!-- A propos de l'école -->
+    <section id="apropos">
+        <div>
+            <p>Première école du Bénin dont la pédagogie est spécialement basée sur la pédagogie de Montessori</p>
+        </div>
+    </section>
+    
+    <!-- Classes -->
+ <div class="main_classes">
+    <p>Nos Classes Disponibles</p>
+    
+    <section id="classes">
+       <div class="image_box">
+           <div class="image">
+               <img src="./eleve_accueil.jpg" alt="#">
+           </div>
+           <h2>Garderie/Pré-maternelle</h2>
+       </div>
+       
+       <div class="image_box">
+           <div class="image">
+               <img src="./eleve_accueil.jpg" alt="#">
+           </div>
+           <h2>Jardin d'enfants</h2>
+       </div>
+       
+       <div class="image_box">
+           <div class="image">
+               <img src="./eleve_accueil.jpg" alt="#">
+           </div>
+           <h2>Cours d'Initiation</h2>
+       </div>
+       
+       <div class="image_box">
+           <div class="image">
+               <img src="./eleve_accueil.jpg" alt="#">
+           </div>
+           <h2>Cours Préparatoire</h2>
+       </div>
+       
+       <div class="image_box">
+           <div class="image">
+               <img src="./eleve_accueil.jpg" alt="#">
+           </div>
+           <h2>Cours Élémentaire 1ère année</h2>
+       </div>
+       
+       <div class="image_box">
+           <div class="image">
+               <img src="./eleve_accueil.jpg" alt="#">
+           </div>
+           <h2>Cours Élémentaire 2ème année</h2>
+       </div>
+       
+       <div class="image_box">
+           <div class="image">
+               <img src="./eleve_accueil.jpg" alt="#">
+           </div>
+           <h2>Cours Moyen 1ère année</h2>
+       </div>
+       
+       <div class="image_box">
+           <div class="image">
+               <img src="./eleve_accueil.jpg" alt="#">
+           </div>
+           <h2>Cours Moyen 2ème année</h2>
+       </div>
+    </section>
+ </div>
+  
+    <!-- Contacts -->
+    <section class="main" id="main">
+    <section id="contacts">
+        <div class="titre">
+            <p>Contactez-Nous</p>
+        </div>
+        <div class="contacts-infos">
+            <ul>
+                <li>&#9743 : +229 0151836915</li>
+                <li>&#9990 : +229 51836915</li>
+                <li>&#9993 : ananijeffrey9100@gmail.com</li>
+                <li>&#10158 : Marina PK10</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="mail_box">
+        <div class="titre">
+            <p>Envoyez-nous un message</p>
+        </div>
+        <form action="contact.php" method="POST">
+            <label for="nom">Nom</label> <br />
+            <input type="text" id="nom" name="nom" placeholder="Nom" required /> <br />
+            <label for="email">Email</label> <br />
+            <input type="email" id="email" name="email" placeholder="Email" required /> <br />
+            <label for="message">Message</label> <br />
+            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea> <br />
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    </section>
+    <!-- Pied de page -->
+    <footer>
+        <p>Réalisation de <a href="#">@Jeffrey ANANI@</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
