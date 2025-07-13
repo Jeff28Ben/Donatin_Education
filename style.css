@@ -40,7 +40,7 @@ header{
     justify-content: space-between;
     gap: 15px;
     width: 90%;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 #main-contain nav ul li{
     list-style: none;
